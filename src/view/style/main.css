@@ -1,0 +1,59 @@
+body {
+  background-color: #1b3a4b;
+  /* height: 100vh; */
+}
+
+.header-message {
+  background-color: #065a60;
+}
+.form-message {
+  background-color: #065a6000;
+}
+
+.input-message {
+  padding: 0 15px;
+  width: 100%;
+  height: 100%;
+  background-color: #065a60;
+  border: none;
+  color: white;
+}
+
+.input-message:active {
+  outline: none;
+  border: none;
+}
+
+.input-message:focus {
+  outline: none;
+  border: none;
+}
+
+.input-message::placeholder {
+  color: #658385;
+  opacity: 1; /* Firefox */
+}
+
+.chat {
+  padding: 0px 20px;
+  color: aliceblue;
+  /* background-color: #214b61; */
+  margin: 3px 0;
+  font-size: 15px;
+}
+
+.chat .content {
+  padding: 5px 10px;
+  background-color: #214b61;
+  border-radius: 5px;
+}
+
+.chat .ip-content {
+  background-color: #175577;
+  padding: 1px 5px;
+  border-radius: 5px;
+  font-size: 10px;
+  margin-top: -40px;
+  z-index: 999;
+  position: sticky;
+}

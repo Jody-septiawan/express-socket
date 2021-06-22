@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>ChatApp</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/main.css">
+  </head>
+  <body>
+    <div class="message">
+
+        <div class="fixed-top header-message">
+            <div class="d-flex">
+                <div class="p-1" style="flex: 50%;">
+                    <span class="text-light" id="myIp">Ip Address:</span>
+                </div>
+                <div class="p-1 text-right text-light" id="countUser" style="flex: 50%;">
+                </div>
+            </div>
+        </div>
+
+        <div id="messages" class="py-5"></div>
+
+        <div class="fixed-bottom form-message pb-2">
+            <form action="" id="form">
+                <div class="d-flex px-1">
+                    <div class="p-1 w-100">
+                        <input type="text" id="input" class="rounded-pill input-message" placeholder="Write here ..." aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="p-1 flex-shrink-1 d-flex align-items-center">
+                        <button class="btn btn-primary btn-sm rounded-pill" id="button-send">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
